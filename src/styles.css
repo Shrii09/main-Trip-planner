@@ -1,0 +1,238 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* color: white; */
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  /* filter: blur(0.8px); */
+  /* opacity: 0.8; */
+  height: 10vh;
+}
+
+button {
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 100px;
+  cursor: pointer;
+  background: #0e0e0f;
+  color: #fff;
+  border: solid 1px #0e0e0f;
+}
+
+input {
+  height: 58px;
+  padding: 20px 15px;
+  color: #0e0e0f;
+  font-weight: 500;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  background: 0 0;
+  border: 1px solid black;
+}
+
+.loginBtn {
+  opacity: 1;
+  border: 1px solid white;
+}
+
+.authBtnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.userFirstLetter {
+  background-color: white;
+  text-transform: uppercase;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 900;
+  border-radius: 100px;
+}
+
+.myaccount .userFirstLetter {
+  background-color: black;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 900;
+  width: max-content;
+  padding: 20px;
+  cursor: pointer;
+  color: white;
+  flex: 1;
+}
+
+.header1 {
+  font-size: 66px;
+  margin-bottom: 24px;
+  max-width: 500px;
+}
+
+.header2 {
+  font-size: 20px;
+  letter-spacing: 0.4;
+}
+
+.bgImg {
+  /* width: 100vw;
+  height: 100vh; */
+  z-index: -10;
+  position: absolute;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px;
+  height: 80vh;
+}
+
+.planner {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 300px;
+  position: relative;
+}
+
+.closePlannerBtn {
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  font-weight: 900;
+  font-size: 16px;
+  padding: 5px 10px;
+  background: white;
+  border: 0;
+  border-radius: 4px;
+  color: black;
+}
+
+.plannerTitle {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.destinationDropdown {
+  color: black !important;
+}
+
+.searchSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.searchTabs {
+  display: flex;
+  gap: 30px;
+  user-select: none;
+}
+
+.searchTab {
+  cursor: pointer;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.searchTabActive {
+  border-bottom: 1px solid blue;
+  padding-bottom: 3px;
+}
+
+.line {
+  border: 1px solid rgba(128, 128, 128, 0.339);
+  width: 1px;
+  height: 35px;
+}
+
+.backBtnSearch {
+  text-align: left;
+  align-self: flex-start;
+  margin-left: 100px;
+}
+
+.dayByDay,
+.hotels,
+.restaurants {
+  min-width: 250px;
+}
+
+.searchCard {
+  box-shadow: 0 2px 9px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+}
+
+.cardTime {
+  width: 140px;
+}
+
+.searchIcons {
+  display: flex;
+  gap: 15px;
+  font-size: 12px;
+}
+
+.searchIcons img {
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  border-radius: 100px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchIconImg {
+}
+
+.searchIcons img:hover {
+  background: rgba(128, 128, 128, 0.148);
+}
+
+.cardName {
+  color: black;
+}
+
+.cardDetailsSection {
+  display: flex;
+}
+
+.cardDestinationImg {
+  width: 216px;
+  height: 144px;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}

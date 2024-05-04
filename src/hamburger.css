@@ -1,0 +1,80 @@
+.hamburger-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.hamburger {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.hamburger input {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+.hamburger span {
+  display: block;
+  flex: 1;
+  background-color: cornsilk;
+  border-radius: 100px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.first {
+  opacity: 1;
+  transform: rotate(45deg) translate(11px, 12px);
+  background: #232323;
+}
+
+.second {
+  opacity: 0;
+  transform: scale(0.2, 0.2);
+}
+
+.third {
+  transform: rotate(-45deg) translate(11px, -12px);
+}
+
+.navMenu {
+  position: absolute;
+  background: black;
+  top: 10vh;
+  left: 0;
+  padding: 50px;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-500px, 0);
+  transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.navMenu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+.navMenu a {
+  color: white !important;
+  text-decoration: none;
+}
+
+.navMenu a:hover {
+  text-decoration: underline;
+}
+
+.showNav {
+  transform: none;
+}
